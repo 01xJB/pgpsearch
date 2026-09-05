@@ -15,17 +15,15 @@
 
 ## Overview
 
-PGPSearch queries the Ubuntu PGP keyserver for a given domain and extracts every publicly listed name/email pair associated with it. It's a lightweight OSINT primitive: a fast way to build an initial email/identity list for a target organization from data people have already chosen to publish on a public keyserver — useful for recon, attack-surface mapping, or auditing your own org's exposure.
+PGPSearch queries the Ubuntu PGP keyserver for a given domain and extracts every publicly listed name/email pair associated with it. It's a lightweight OSINT primitive: a fast way to build an initial email/identity list for a target organization from data people have already chosen to publish on a public keyserver. Useful for recon, attack-surface mapping, or auditing your own org's exposure.
 
 ## Features
 
 - 🔍 **Domain-scoped lookup** against the Ubuntu keyserver (`keyserver.ubuntu.com`)
 - ⚡ **Multi-threaded execution** for faster bulk queries
-- 🧾 **Two output formats** — a readable name+email table, or a plain email-only list
+- 🧾 **Two output formats**: a readable name+email table, or a plain email-only list
 - 🌐 **Proxy support** (`socks5://`, `http://`, …) for privacy-conscious lookups
 - 💾 **File export** alongside console output
-
----
 
 ## Requirements
 
@@ -78,11 +76,9 @@ python3 pgpsearch.py -d example.com -t 5 -o emails.txt -f email
 | `default` | Name + email in a rendered table (also written to file if `-o` is set) |
 | `email` | Email addresses only, one per line |
 
----
-
 ## Contributing
 
-Issues and pull requests are welcome — open one to discuss a change before submitting.
+Issues and pull requests are welcome. Open one to discuss a change before submitting.
 
 ## License
 
